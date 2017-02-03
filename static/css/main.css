@@ -170,7 +170,8 @@ header.archive_header,
 header.page_header, 
 header.tag_header,
 header.author_header,
-header.category_header {
+header.category_header,
+header.categories_header {
     background-color: cadetblue;
     width: 40%;
     box-sizing: border-box;
@@ -204,10 +205,18 @@ div.dates_archive ul {
 }
 
 div.dates_archive time {
-    width: 13em;    
+    width: 15em;    
     float: left;
     text-align: right;
     margin-right: 1em;
+}
+
+div.dates_archive h2 {
+    clear: both;
+}
+
+div.categories {
+    margin-left: 10%;
 }
 
 div.categories_archive {
