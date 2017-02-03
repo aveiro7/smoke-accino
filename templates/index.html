@@ -9,7 +9,7 @@
         <div class="header">
             <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
             <div class="category">
-                Category: <a href="">{{ article.category }}</a>
+                Category: <a href="{{ article.category.url }}">{{ article.category }}</a>
             </div>
         </div>
         <div class="content">
