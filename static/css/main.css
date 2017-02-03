@@ -191,9 +191,12 @@ div.dates_archive {
 }
 
 div.dates_archive#archive {
-    
     float: left;
     margin-bottom: 2em;
+}
+
+div.dates_archive#archive ul {
+    padding: 0 ;
 }
 
 div.dates_archive ul {
@@ -213,6 +216,7 @@ div.categories_archive {
 }
 div.categories_archive ul {
     list-style-type: none;
+    padding-left: 1em;
 }
 
 div.tags_archive {
