@@ -1,0 +1,233 @@
+body {
+    font-family : Helvetica, monospace ;
+    font-size : 100% ;
+    color : aliceblue;
+    background-color: #38231c;
+    margin: 0;
+}
+
+a:link { 
+    color: cadetblue; 
+    text-decoration: none;
+}
+a:visited { 
+    color: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: monospace;
+}
+
+h1 a,
+h2 a {
+    color: aliceblue !important;
+}
+
+a:hover { 
+    color: palevioletred !important; 
+}
+
+#banner {
+    padding-left: 10%;
+    background-color: cadetblue;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#banner h1 {
+    font-family: 'ArmWrestler', 'Source Sans Pro';
+    font-size: 3em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: lightgray;
+    padding: 1em 0;
+    margin: 0 0 1em;
+    color: cadetblue;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5em;
+}
+
+nav li.archives {
+    float: right;
+    margin-right: 1em;
+}
+
+.index {
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.post {
+    float:left;
+    width: 30%;
+    margin: 1.5%;
+    background-color: beige;
+    border-radius: 1em 1em 0 0;
+    overflow: hidden;
+    color: darkslategray;
+    border: thin solid cadetblue;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.post:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.post .header {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.post .header:hover {
+    background-color: #005a5a;
+}
+
+.post .header h2 {
+    margin-bottom: 0;
+}
+
+.nav_older {
+    clear: both;
+    float: right;
+    margin-right: 10%;
+}
+
+.blogpost {
+    background-color: beige;
+    border-radius: 1em 1em 0 0;
+    overflow: hidden;
+    width: 70%;
+    margin-left: 10%;
+    color: darkslategray;
+    border: thin solid cadetblue;
+}
+
+.header {
+    padding: 1em;
+    background-color: cadetblue;
+    color: aliceblue;
+    border-radius: 1em 1em 0 0;
+}
+
+.header .date h3 {
+    margin: 0;
+}
+
+.header .category {
+    font-size: 0.9em;
+}
+
+.header .category a {
+    color: bisque;
+}
+
+.content {
+    padding: 1em;
+}
+
+.tags {
+    float: left;
+    width: 100%;
+    margin 0;
+    font-size: 0.9em;
+    font-family: monospace;
+    padding-left: 1em;;
+}
+
+.tags ul {
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 1em;
+    margin 0;
+}
+
+.tags ul li {
+    float: left;
+    padding: 0 0.5em 1em 0;
+    margin: 0;
+}
+
+footer {
+    font-size: small;
+    width: 31em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.archive_header, 
+header.page_header, 
+header.tag_header,
+header.author_header {
+    background-color: cadetblue;
+    width: 40%;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    float: left;
+    text-align: right;
+    padding-right: 2em;
+}
+
+div#archive_tabs {
+    margin-left: 10%;
+}
+
+div#dates_archive {
+    clear: both;
+    width: 60%;
+    float: left;
+    margin-bottom: 2em;
+}
+
+div#dates_archive ul {
+    list-style-type: none;
+}
+
+div#dates_archive time {
+    width: 13em;    
+    float: left;
+    text-align: right;
+    margin-right: 1em;
+}
+
+div#categories_archive {
+    width: 30%;
+    float: right;
+}
+div#categories_archive ul {
+    list-style-type: none;
+}
+
+div#tags_archive {
+    clear: both;
+}
+
+div#tags_archive ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+div#tags_archive li {
+    float: left;
+    margin-right: 1em;
+}
+
+div#page_content {
+    clear: left;
+    margin-left: 10%;
+}
+
+@font-face {
+    font-family: 'ArmWrestler';
+    src: url(/theme/fonts/ArmWrestler/ArmWrestler.ttf) format(truetype);
+}
