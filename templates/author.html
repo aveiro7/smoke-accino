@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}{{ author.name }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+    <header class="author_header">
+    <h2>{{ author.name }}'s posts</h2>
+    </header>
+    
+    <div id="dates_archive">
+        <ul>
+            {% for post in articles %}
+                {% if post.author == author %}
+                    <li>
+                    {{ post.locale_date }}
+                    <a href="{{ SITEURL }}/{{ post.url }}">{{ post.title }}</a>
+
+                    {{ post.summary }}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
