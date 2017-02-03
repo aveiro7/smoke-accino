@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}- {{ SITENAME }}{% endblock %}
+{% block content %}
+
+	<header class='page_header'>
+		<h2>{{ page.title }}</h2>
+    </header>
+    <div id='page_content'>
+		{{ page.content }}		
+    </div>
+{% endblock %}
