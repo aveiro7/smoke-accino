@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ tag }} - {{ SITENAME }}{% endblock %}
+{% block content %}
+<div class="wrapper main">
+    <header class="tag_header">
+	   <h2>Post tagged: {{ tag }}</h2>
+    </header>
+	
+    <div id="dates_archive">
+        <ul>
+            {% for article in articles %}
+            <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> <li class="clearfix"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

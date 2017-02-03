@@ -14,7 +14,7 @@
 		<ul>
 			{% for article in date_year %}
 			<li>
-                <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time><a href="{{ article.url }}">{{ article.title }}</a> by <a href="{{ article.author.url }}">{{ article.author }}</a> 
+                <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time><a href="{{ article.url }}">{{ article.title }} 
             </li>
 			{% endfor %}
 		</ul>
