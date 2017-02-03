@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+
+{% block content %}
+<div role="main" class="index">
+{% for article in articles %}
+    {% if loop.index <= 10 %}
+    <div class="post">
+        <div class="header">
+            <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+        </div>
+        <div class="content">
+		  {{ article.summary }} <a class="btn" href="{{ SITEURL }}/{{ article.url }}">read more →</a>
+        </div>
+    </div>
+    {% elif loop.length > 9 %}
+    <div class="nav_older">
+        <a href="{{ SITEURL }}/archives.html">OLDER ></a>
+    </div>
+    {% endif %}
+{% endfor %}
+</div>
+{% endblock content %}
