@@ -161,6 +161,7 @@ footer {
     font-size: small;
     width: 31em;
     margin-top: 1em;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -168,11 +169,13 @@ footer {
 header.archive_header, 
 header.page_header, 
 header.tag_header,
-header.author_header {
+header.author_header,
+header.category_header {
     background-color: cadetblue;
     width: 40%;
     box-sizing: border-box;
     margin-bottom: 2em;
+    margin-top: 2em;
     float: left;
     text-align: right;
     padding-right: 2em;
@@ -182,44 +185,56 @@ div#archive_tabs {
     margin-left: 10%;
 }
 
-div#dates_archive {
+div.dates_archive {
     clear: both;
     width: 60%;
+}
+
+div.dates_archive#archive {
+    
     float: left;
     margin-bottom: 2em;
 }
 
-div#dates_archive ul {
+div.dates_archive ul {
     list-style-type: none;
 }
 
-div#dates_archive time {
+div.dates_archive time {
     width: 13em;    
     float: left;
     text-align: right;
     margin-right: 1em;
 }
 
-div#categories_archive {
+div.categories_archive {
     width: 30%;
     float: right;
 }
-div#categories_archive ul {
+div.categories_archive ul {
     list-style-type: none;
 }
 
-div#tags_archive {
+div.tags_archive {
     clear: both;
 }
 
-div#tags_archive ul {
+div.tags_archive ul {
     list-style-type: none;
     overflow: hidden;
 }
 
-div#tags_archive li {
+div.tags_archive li {
     float: left;
     margin-right: 1em;
+}
+
+ul#author_archive li {
+    margin-bottom: 2em;
+}
+
+ul#author_archive li .author_header {
+    font-weight: 600;
 }
 
 div#page_content {

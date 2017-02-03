@@ -7,14 +7,15 @@
     <h2>{{ author.name }}'s posts</h2>
     </header>
     
-    <div id="dates_archive">
-        <ul>
+    <div class="dates_archive">
+        <ul id="author_archive">
             {% for post in articles %}
                 {% if post.author == author %}
                     <li>
-                    {{ post.locale_date }}
-                    <a href="{{ SITEURL }}/{{ post.url }}">{{ post.title }}</a>
-
+                    <div class="author_header">
+                        {{ post.locale_date }}
+                        <a href="{{ SITEURL }}/{{ post.url }}">{{ post.title }}</a>
+                    </div>
                     {{ post.summary }}
                     </li>
                 {% endif %}
