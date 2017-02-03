@@ -229,5 +229,5 @@ div#page_content {
 
 @font-face {
     font-family: 'ArmWrestler';
-    src: url(/theme/fonts/ArmWrestler/ArmWrestler.ttf) format(truetype);
+    src: url(/theme/fonts/ArmWrestler/ArmWrestler.ttf);
 }
