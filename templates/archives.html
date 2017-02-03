@@ -14,18 +14,26 @@
 		<ul>
 			{% for article in date_year %}
 			<li>
-                <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time><a href="{{ article.url }}">{{ article.title }} 
+                <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time><a href="{{ article.url }}">{{ article.title }}</a>
             </li>
 			{% endfor %}
 		</ul>
 	{% endfor %}
 	</div>
 	
+    <div id="categories_archive">
+        <h2>Categories</h2>
+        <ul>
+            {% for category, null in categories|sort %}
+            <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 	<div id="tags_archive">
 		<h2>Tags</h2>
 		<ul>
 		{% for tag, null in tags|sort %}
-		    <li class="tag-{{ tag.name }}"><a href="{{ SITEURL }}/tag/{{ tag.name }}">{{ tag.name }}</a></li>
+		    <li><a href="{{ tag.url }}">{{ tag.name }}</a></li>
 		{% endfor %}
 		</ul>
 	</div>
